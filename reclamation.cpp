@@ -30,7 +30,7 @@ bool Reclamation::ajouter()
 bool Reclamation::supprimer(QString id)
 {
     QSqlQuery query;
-         query.prepare(" Delete from etudiant where id=:id");
+         query.prepare(" Delete from RECLAMATIONS where ID_RECLAMATION=:id");
          query.bindValue(0, id);
 
         return query.exec();
@@ -42,10 +42,12 @@ QSqlQueryModel* Reclamation::afficher()
   QSqlQueryModel* model=new QSqlQueryModel();
 
 
-   model->setQuery("SELECT* FROM etudiant");
-   model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identenfiant"));
-   model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
-   model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
+   model->setQuery("SELECT* FROM RECLAMATIONS");
+   model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID_RECLAMATION"));
+   model->setHeaderData(1, Qt::Horizontal, QObject::tr("ID_FOURNISSEUR"));
+   model->setHeaderData(2, Qt::Horizontal, QObject::tr("ID_CLIENT"));
+   model->setHeaderData(3, Qt::Horizontal, QObject::tr("DATE_RECLAMATION"));
+
 
 
   return  model;

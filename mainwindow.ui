@@ -24,11 +24,26 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Afficher les reclamations</string>
+     </attribute>
+     <widget class="QTableView" name="tab_etudiant">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>501</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Ajouter un etudiant</string>
+      <string>Ajouter une reclamation</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
@@ -45,40 +60,40 @@
       <widget class="QLabel" name="label">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>50</y>
-         <width>55</width>
-         <height>16</height>
+         <x>24</x>
+         <y>46</y>
+         <width>71</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="text">
-        <string>Identifiant</string>
+        <string>Id Reclamation</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_2">
        <property name="geometry">
         <rect>
-         <x>30</x>
+         <x>24</x>
          <y>90</y>
-         <width>55</width>
-         <height>16</height>
+         <width>71</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="text">
-        <string>Nom</string>
+        <string>Id Fournisseur</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
-         <x>30</x>
+         <x>24</x>
          <y>130</y>
-         <width>55</width>
-         <height>16</height>
+         <width>61</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="text">
-        <string>Prenom</string>
+        <string>Id Client</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="le_id">
@@ -126,36 +141,21 @@
       </widget>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Afficher les etudiants</string>
-     </attribute>
-     <widget class="QTableView" name="tab_etudiant">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>501</width>
-        <height>201</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
-      <string>Supprimer un etudiant</string>
+      <string>Supprimer une reclamation</string>
      </attribute>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
         <x>60</x>
         <y>40</y>
-        <width>55</width>
+        <width>81</width>
         <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>Identifiant</string>
+       <string>Id Reclamation</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="le_id_supp">

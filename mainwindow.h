@@ -20,6 +20,10 @@ private slots:
 
     void on_pb_supprimer_clicked();
 
+    void on_pb_rechercher_clicked();
+
+    void on_pb_modifier_clicked();
+
 private:
     Ui::MainWindow *ui;
     Reclamation R;

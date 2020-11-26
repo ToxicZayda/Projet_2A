@@ -17,8 +17,9 @@ public:
     bool ajouter();
     QSqlQueryModel* afficher();
     bool supprimer(QString);
+    bool modifier(QString);
 private:
-    QString IdFournisseur, IdClient,idReclamation;
+    QString IdFournisseur, description,IdClient,idReclamation;
 };
 
 

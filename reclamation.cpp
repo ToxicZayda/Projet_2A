@@ -1,10 +1,12 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 #include "reclamation.h"
 #include <QSqlQuery>
 #include <QtDebug>
 #include <QObject>
 Reclamation::Reclamation()
 {
-idReclamation=""; IdFournisseur=" "; IdClient="";
+idReclamation=""; IdFournisseur=""; IdClient=" ";
 }
 
 Reclamation::Reclamation(QString idReclamation,QString IdFournisseur,QString IdClient)
@@ -32,11 +34,18 @@ bool Reclamation::supprimer(QString id)
     QSqlQuery query;
          query.prepare(" Delete from RECLAMATIONS where ID_RECLAMATION=:id");
          query.bindValue(0, id);
-
         return query.exec();
 
 
 }
+
+bool Reclamation::modifier(QString id)
+{
+    QSqlQuery query;
+         query.prepare(" update RECLAMATIONS set ID_FOURNISSEUR='"+IdFournisseur+"',ID_CLIENT='"+IdClient+"' where ID_RECLAMATION='"+id+"'");
+         return query.exec();
+}
+
 QSqlQueryModel* Reclamation::afficher()
 {
   QSqlQueryModel* model=new QSqlQueryModel();
@@ -52,3 +61,4 @@ QSqlQueryModel* Reclamation::afficher()
 
   return  model;
 }
+

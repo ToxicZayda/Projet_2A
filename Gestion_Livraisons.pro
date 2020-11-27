@@ -10,12 +10,14 @@ CONFIG += c++11
 
 SOURCES += \
     connexion.cpp \
+    fournisseur.cpp \
     main.cpp \
     mainwindow.cpp \
     reclamation.cpp
 
 HEADERS += \
     connexion.h \
+    fournisseur.h \
     mainwindow.h \
     reclamation.h
 

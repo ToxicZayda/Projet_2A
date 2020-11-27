@@ -7,7 +7,7 @@ class Reclamation
 {
 public:
     Reclamation();
-    Reclamation(QString,QString,QString);
+    Reclamation(QString,QString,QString,QString);
     QString getIdReclamation();
     QString getIdFournisseur();
     QString getIdClient();
@@ -19,7 +19,7 @@ public:
     bool supprimer(QString);
     bool modifier(QString);
 private:
-    QString IdFournisseur, description,IdClient,idReclamation;
+    QString IdFournisseur, description,IdClient,IdReclamation,Desc;
 };
 
 

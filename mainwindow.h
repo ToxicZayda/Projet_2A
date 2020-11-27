@@ -24,6 +24,16 @@ private slots:
 
     void on_pb_modifier_clicked();
 
+    void on_pb_ajouter_f_clicked();
+
+    void on_pb_supprimer_fournisseur_clicked();
+
+    void on_pb_rechercher_f_clicked();
+
+    void on_pb_modifier_f_clicked();
+
+    void on_pb_reset_clicked();
+
 private:
     Ui::MainWindow *ui;
     Reclamation R;
